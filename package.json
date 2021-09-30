@@ -1,5 +1,5 @@
 {
-  "name": "MERN-STARTER",
+  "name": "MERN",
   "version": "1.0.0",
   "engines": {
     "node": "8.11.2"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joerez/campaign-manager"
+    "url": "git+https://github.com/nalhomsi/Motor-Mern"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joerez/MERN-SPA-starter"
+    "url": "https://github.com/nalhomsi/Motor-Mern"
   },
-  "homepage": "https://github.com/joerez/MERN-SPA-starter",
+  "homepage": "https://github.com/nalhomsi/Motor-Mern",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
