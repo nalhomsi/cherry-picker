@@ -1,17 +1,26 @@
-import 'materialize-css/dist/css/materialize.min.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { createBrowserHistory } from "history";
+import { Router, Route, Switch } from "react-router-dom";
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import reduxThunk from 'redux-thunk';
+import "assets/scss/material-kit-react.scss?v=1.10.0";
 
-import App from './components/App';
-import reducers from './reducers';
+// pages for this product
+import Components from "views/Components/Components.js";
+import LandingPage from "views/LandingPage/LandingPage.js";
+import ProfilePage from "views/ProfilePage/ProfilePage.js";
+import LoginPage from "views/LoginPage/LoginPage.js";
 
-const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
+var hist = createBrowserHistory();
 
 ReactDOM.render(
-<Provider store={store}><App /></Provider>,
-document.querySelector('#root')
+  <Router history={hist}>
+    <Switch>
+      <Route path="/landing-page" component={LandingPage} />
+      <Route path="/profile-page" component={ProfilePage} />
+      <Route path="/login-page" component={LoginPage} />
+      <Route path="/" component={Components} />
+    </Switch>
+  </Router>,
+  document.getElementById("root")
 );
