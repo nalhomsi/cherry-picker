@@ -15,7 +15,6 @@
  */
 
 var accepts = require('accepts')
-var Buffer = require('safe-buffer').Buffer
 var bytes = require('bytes')
 var compressible = require('compressible')
 var debug = require('debug')('compression')
@@ -31,21 +30,14 @@ module.exports = compression
 module.exports.filter = shouldCompress
 
 /**
- * Module variables.
- * @private
- */
-
-var cacheControlNoTransformRegExp = /(?:^|,)\s*?no-transform\s*?(?:,|$)/
-
-/**
  * Compress response data with gzip / deflate.
  *
- * @param {Object} [options]
+ * @param {Object} options
  * @return {Function} middleware
  * @public
  */
 
-function compression (options) {
+function compression(options) {
   var opts = options || {}
 
   // options
@@ -56,18 +48,17 @@ function compression (options) {
     threshold = 1024
   }
 
-  return function compression (req, res, next) {
+  return function compression(req, res, next){
     var ended = false
     var length
     var listeners = []
+    var write = res.write
+    var on = res.on
+    var end = res.end
     var stream
 
-    var _end = res.end
-    var _on = res.on
-    var _write = res.write
-
     // flush
-    res.flush = function flush () {
+    res.flush = function flush() {
       if (stream) {
         stream.flush()
       }
@@ -75,7 +66,7 @@ function compression (options) {
 
     // proxy
 
-    res.write = function write (chunk, encoding) {
+    res.write = function(chunk, encoding){
       if (ended) {
         return false
       }
@@ -85,11 +76,11 @@ function compression (options) {
       }
 
       return stream
-        ? stream.write(toBuffer(chunk, encoding))
-        : _write.call(this, chunk, encoding)
-    }
+        ? stream.write(new Buffer(chunk, encoding))
+        : write.call(this, chunk, encoding)
+    };
 
-    res.end = function end (chunk, encoding) {
+    res.end = function(chunk, encoding){
       if (ended) {
         return false
       }
@@ -104,7 +95,7 @@ function compression (options) {
       }
 
       if (!stream) {
-        return _end.call(this, chunk, encoding)
+        return end.call(this, chunk, encoding)
       }
 
       // mark ended
@@ -112,13 +103,13 @@ function compression (options) {
 
       // write Buffer for Node.js 0.8
       return chunk
-        ? stream.end(toBuffer(chunk, encoding))
+        ? stream.end(new Buffer(chunk, encoding))
         : stream.end()
-    }
+    };
 
-    res.on = function on (type, listener) {
+    res.on = function(type, listener){
       if (!listeners || type !== 'drain') {
-        return _on.call(this, type, listener)
+        return on.call(this, type, listener)
       }
 
       if (stream) {
@@ -131,22 +122,16 @@ function compression (options) {
       return this
     }
 
-    function nocompress (msg) {
+    function nocompress(msg) {
       debug('no compression: %s', msg)
-      addListeners(res, _on, listeners)
+      addListeners(res, on, listeners)
       listeners = null
     }
 
-    onHeaders(res, function onResponseHeaders () {
+    onHeaders(res, function(){
       // determine if request is filtered
       if (!filter(req, res)) {
         nocompress('filtered')
-        return
-      }
-
-      // determine if the entity should be transformed
-      if (!shouldTransform(req, res)) {
-        nocompress('no transform')
         return
       }
 
@@ -159,16 +144,16 @@ function compression (options) {
         return
       }
 
-      var encoding = res.getHeader('Content-Encoding') || 'identity'
+      var encoding = res.getHeader('Content-Encoding') || 'identity';
 
       // already encoded
-      if (encoding !== 'identity') {
+      if ('identity' !== encoding) {
         nocompress('already encoded')
         return
       }
 
       // head
-      if (req.method === 'HEAD') {
+      if ('HEAD' === req.method) {
         nocompress('HEAD request')
         return
       }
@@ -194,31 +179,31 @@ function compression (options) {
         ? zlib.createGzip(opts)
         : zlib.createDeflate(opts)
 
-      // add buffered listeners to stream
+      // add bufferred listeners to stream
       addListeners(stream, stream.on, listeners)
 
       // header fields
-      res.setHeader('Content-Encoding', method)
-      res.removeHeader('Content-Length')
+      res.setHeader('Content-Encoding', method);
+      res.removeHeader('Content-Length');
 
       // compression
-      stream.on('data', function onStreamData (chunk) {
-        if (_write.call(res, chunk) === false) {
+      stream.on('data', function(chunk){
+        if (write.call(res, chunk) === false) {
           stream.pause()
         }
-      })
+      });
 
-      stream.on('end', function onStreamEnd () {
-        _end.call(res)
-      })
+      stream.on('end', function(){
+        end.call(res);
+      });
 
-      _on.call(res, 'drain', function onResponseDrain () {
+      on.call(res, 'drain', function() {
         stream.resume()
-      })
-    })
+      });
+    });
 
-    next()
-  }
+    next();
+  };
 }
 
 /**
@@ -226,7 +211,7 @@ function compression (options) {
  * @private
  */
 
-function addListeners (stream, on, listeners) {
+function addListeners(stream, on, listeners) {
   for (var i = 0; i < listeners.length; i++) {
     on.apply(stream, listeners[i])
   }
@@ -236,7 +221,7 @@ function addListeners (stream, on, listeners) {
  * Get the length of a given chunk
  */
 
-function chunkLength (chunk, encoding) {
+function chunkLength(chunk, encoding) {
   if (!chunk) {
     return 0
   }
@@ -251,7 +236,7 @@ function chunkLength (chunk, encoding) {
  * @private
  */
 
-function shouldCompress (req, res) {
+function shouldCompress(req, res) {
   var type = res.getHeader('Content-Type')
 
   if (type === undefined || !compressible(type)) {
@@ -260,29 +245,4 @@ function shouldCompress (req, res) {
   }
 
   return true
-}
-
-/**
- * Determine if the entity should be transformed.
- * @private
- */
-
-function shouldTransform (req, res) {
-  var cacheControl = res.getHeader('Cache-Control')
-
-  // Don't compress for Cache-Control: no-transform
-  // https://tools.ietf.org/html/rfc7234#section-5.2.2.4
-  return !cacheControl ||
-    !cacheControlNoTransformRegExp.test(cacheControl)
-}
-
-/**
- * Coerce arguments to Buffer
- * @private
- */
-
-function toBuffer (chunk, encoding) {
-  return !Buffer.isBuffer(chunk)
-    ? Buffer.from(chunk, encoding)
-    : chunk
 }
