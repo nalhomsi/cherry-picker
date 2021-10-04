@@ -3,10 +3,10 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
   const  categories = [
-    { name: 'ShowVroom', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
-    { name: 'Cherry Picker', description: 'Portraits of people in my life' },
-    { name: 'VIN Verify', description: 'Delicious delicacies' },
-    { name: 'Contact', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }
+    { name: 'ShowVroom', description: 'Cars for sale' },
+    { name: 'Parts and Parcel', description: 'car parts' },
+    { name: 'VIN Verify', description: 'edmunds vin and price verify' },
+    { name: 'Contact', description: 'contact us' }
   ];
 
   const handleClick = () => {
