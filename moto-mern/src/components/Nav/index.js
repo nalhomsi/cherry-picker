@@ -3,10 +3,10 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
   const  categories = [
-    { name: 'place holder', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
-    { name: 'place holder', description: 'Portraits of people in my life' },
-    { name: 'place holder', description: 'Delicious delicacies' },
-    { name: 'place holder', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }
+    { name: 'ShowVroom', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
+    { name: 'Cherry Picker', description: 'Portraits of people in my life' },
+    { name: 'VIN Verify', description: 'Delicious delicacies' },
+    { name: 'Contact', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }
   ];
 
   const handleClick = () => {
@@ -15,11 +15,6 @@ function Nav() {
 
   return (
     <header data-testid="header" className="flex-row px-1">
-      <h2>
-        <a href="/">
-          <span role="img" aria-label="car"></span> moto mern
-        </a>
-      </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
