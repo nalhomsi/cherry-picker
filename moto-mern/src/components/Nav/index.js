@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
@@ -14,31 +15,20 @@ function Nav() {
   }
 
   return (
-    <header data-testid="header" className="flex-row px-1">
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
-              About
-            </a>
-          </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
-              Contact
-            </span>
-          </li>
-          {
-            categories.map((category) => (
-              <li className="mx-1" key={category.name} >
-                <span onClick={() => { handleClick(); }}>
-                 {capitalizeFirstLetter(category.name)}
-                </span>
-              </li>
-            ))
-          }
-        </ul>
-      </nav>
-    </header>
+    <nav className="navbar">
+                <ul className="container navlinks">
+                    <li className="mx-2 navlinks">
+                        <Link to="/about">
+                            About
+                            </Link>
+                    </li>
+                    <li className="mx-2">
+                        <Link to="/showvroom">
+                            ShowVroom
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
   );
 }
 
