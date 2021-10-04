@@ -4,7 +4,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 function Nav() {
   const  categories = [
     { name: 'ShowVroom', description: 'Cars for sale' },
-    { name: 'Parts and Parcel', description: 'car parts' },
+    { name: 'Parts', description: 'car parts' },
     { name: 'VIN Verify', description: 'edmunds vin and price verify' },
     { name: 'Contact', description: 'contact us' }
   ];
