@@ -1,16 +1,16 @@
 import React from "react";
 
-function ShowVroom() {
+function Contact() {
 
     return(
         <section>
             <div>
                 <header>
-                    <h1>ShowVroom</h1>
+                    <h1>Contact</h1>
                 </header>
             </div>
         </section>
     )
-}
+};
 
-export default ShowVroom;
+export default Contact;
