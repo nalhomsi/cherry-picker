@@ -1,10 +1,13 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
+// Components
 import Nav from './components/Nav';
 import About from './components/About';
 import ShowVroom from './components/ShowVroom';
 import VinVerify from './components/VinVerify';
 import Contact from './components/Contact';
+import Login from './components/Login';
+// Assets
 import coverImage from "./assets/cover/cover-image.jpg";
 
 function App() {
@@ -22,6 +25,7 @@ function App() {
                 <Route exact path='/showvroom' component={ShowVroom} />
                 <Route exact path='/vinverify' component={VinVerify} />
                 <Route exact path='/contact' component={Contact} />
+                <Route exact path='/login' component={Login} />
               </Switch>        
           </main>
         </div>
