@@ -3,6 +3,8 @@ import { HashRouter, Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import About from './components/About';
 import ShowVroom from './components/ShowVroom';
+import VinVerify from './components/VinVerify';
+import Contact from './components/Contact';
 import coverImage from "./assets/cover/cover-image.jpg";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
                 <Route exact={true} path='/' component={About} />
                 <Route exact path="/about" component={About} />
                 <Route exact path='/showvroom' component={ShowVroom} />
+                <Route exact path='/vinverify' component={VinVerify} />
+                <Route exact path='/contact' component={Contact} />
               </Switch>        
           </main>
         </div>

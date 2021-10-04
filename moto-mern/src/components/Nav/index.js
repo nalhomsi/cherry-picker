@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
   const  categories = [
@@ -25,6 +24,16 @@ function Nav() {
                     <li className="mx-2">
                         <Link to="/showvroom">
                             ShowVroom
+                        </Link>
+                    </li>
+                    <li className="mx-2">
+                        <Link to="/vinverify">
+                            VIN Verify
+                        </Link>
+                    </li>
+                    <li className="mx-2">
+                        <Link to="/contact">
+                            Contact
                         </Link>
                     </li>
                 </ul>
