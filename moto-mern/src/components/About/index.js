@@ -1,6 +1,6 @@
 import React from 'react'
 // import coverImage from "../../assets/cover/cover-image.jpg";
-import Plate from '../../assets/images/texas-plate.png';
+
 function About() {
 
   return (
