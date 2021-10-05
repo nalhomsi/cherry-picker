@@ -1,16 +1,16 @@
 import React from "react";
 
-function ShowVroom() {
+function Login() {
 
     return(
         <section>
             <div>
                 <header>
-                    <h1>ShowVroom</h1>
+                    <h1>Login/Signup</h1>
                 </header>
             </div>
         </section>
-    ) 
+    )
 }
 
-export default ShowVroom;
+export default Login;
