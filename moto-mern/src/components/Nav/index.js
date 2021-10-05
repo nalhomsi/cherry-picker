@@ -2,16 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Nav() {
-//   const  categories = [
-//     { name: 'ShowVroom', description: 'Cars for sale' },
-//     { name: 'Parts', description: 'car parts' },
-//     { name: 'VIN Verify', description: 'edmunds vin and price verify' },
-//     { name: 'Contact', description: 'contact us' }
-//   ];
-
-//   const handleClick = () => {
-//     console.log("click handled")
-//   }
 
   return (
     <nav className="navbar">
