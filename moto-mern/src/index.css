@@ -21,7 +21,7 @@ html,
 body {
   min-height: 100%;
   margin-top: 0;
-  
+
 }
 
 body {
@@ -32,7 +32,7 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   background: var(--dark);
-  color: var(--light);
+  color: #e7e9d5;
   font-family: 'tradegothiclt', sans-serif;
 
 }
