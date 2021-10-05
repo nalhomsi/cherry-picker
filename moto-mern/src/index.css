@@ -1,7 +1,7 @@
 main {
 	margin: 0 0;
 	max-width: 90%;
-  padding: 0px 30px;
+  padding: 10px 45px;
 }
 :root {
   --primary: #e7e9d5;
@@ -16,6 +16,7 @@ main {
   --spacing-five: calc(2.5rem);
 
 }
+
 
 /* * {
   box-sizing: border-box;
@@ -88,8 +89,9 @@ a {
 
 .navbar ul {
   display: flex;
-  justify-content: center;
+  justify-content: left center;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .navlinks li a {
