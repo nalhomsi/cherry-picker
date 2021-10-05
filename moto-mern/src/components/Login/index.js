@@ -5,7 +5,7 @@ function Login() {
     return(
         <section>
             <div>
-                <header>
+                <header className="comp-header">
                     <h1>Login/Signup</h1>
                 </header>
             </div>

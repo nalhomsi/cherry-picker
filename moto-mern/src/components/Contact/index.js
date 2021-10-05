@@ -5,7 +5,7 @@ function Contact() {
     return(
         <section>
             <div>
-                <header>
+                <header className="comp-header">
                     <h1>Contact</h1>
                 </header>
             </div>

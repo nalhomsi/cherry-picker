@@ -5,7 +5,7 @@ function ShowVroom() {
     return(
         <section>
             <div>
-                <header>
+                <header className="comp-header">
                     <h1>ShowVroom</h1>
                 </header>
             </div>

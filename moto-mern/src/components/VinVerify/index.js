@@ -5,7 +5,7 @@ function VinVerify() {
     return(
         <section>
             <div>
-                <header>
+                <header className="comp-header">
                     <h1>VIN Verify</h1>
                 </header>
             </div>
