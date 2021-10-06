@@ -81,7 +81,7 @@ p {
 a {
   color: var(--tertiary);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: none;
   margin-top: 0;
 }
 
