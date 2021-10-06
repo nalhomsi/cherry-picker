@@ -1,7 +1,10 @@
-import React from "react";
-
+import React, {useEffect} from "react"; 
+import axios from "axios";
 function ShowVroom() {
-
+useEffect(() =>{
+    axios.get("/getcars").then(results => console.log(results))
+    console.log("hi there");
+},[])
     return(
         <section>
             <div>
