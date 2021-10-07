@@ -9,8 +9,8 @@ import Contact from './components/Contact';
 import Login from './components/Login';
 // Assets
 import coverImage from "./assets/cover/cover-image.jpg";
-var cheerio = require("cheerio");
-var axios = require("axios");
+// var cheerio = require("cheerio");
+// var axios = require("axios");
 
 function App() {
 

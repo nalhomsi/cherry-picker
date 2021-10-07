@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
-import axios from "axios";
-import cheerio from "cheerio"
+// import axios from "axios";
+// import cheerio from "cheerio"
 function ShowVroom() {
 useEffect   (()=>{
     console.log ("Hey")
