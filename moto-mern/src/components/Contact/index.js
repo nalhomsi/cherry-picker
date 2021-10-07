@@ -57,9 +57,9 @@ function Contact() {
     }
 
     return(
-       <center> <section>
+     <section>
             <header className="comp-header">
-                    <h4>Contact</h4>
+                   <center> <h4>Contact Us</h4></center>
                 </header>
             <div>
                 <ContactBox>
@@ -125,6 +125,7 @@ function Contact() {
                             </div>
                             </div>
                             {/* Row 3 of form */}
+                            <br/>
                             <div className='row formRow'>
                             <div className='col'>
                                 <textarea
@@ -151,7 +152,7 @@ function Contact() {
                     </div>
                 </ContactBox>
             </div>
-        </section></center>
+        </section>
     )
 };
 
