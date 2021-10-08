@@ -1,10 +1,25 @@
 import React, {useEffect} from "react";
+// Gallery Files
 import img1 from '../../assets/Cars/ac-cobra.jpg';
 import img2 from '../../assets/Cars/austin-healey.jpg';
 import img3 from '../../assets/Cars/bmw-e30.jpg';
 import img4 from '../../assets/Cars/cadillac-deville.jpg';
 import img5 from '../../assets/Cars/chevrolet-c10.jpg';
 import img6 from '../../assets/Cars/ferrari-250gto.jpg';
+import img7 from '../../assets/Cars/';
+import img8 from '../../assets/Cars/';
+import img9 from '../../assets/Cars/';
+import img10 from '../../assets/Cars/';
+import img11 from '../../assets/Cars/';
+import img12 from '../../assets/Cars/';
+import img13 from '../../assets/Cars/';
+import img14 from '../../assets/Cars/';
+import img15 from '../../assets/Cars/';
+import img16 from '../../assets/Cars/';
+import img17 from '../../assets/Cars/';
+import img18 from '../../assets/Cars/';
+import img19 from '../../assets/Cars/';
+import img20 from '../../assets/Cars/'
 
 function ShowVroom() {
     // Gallery Data
@@ -28,6 +43,62 @@ function ShowVroom() {
         {
             id: 5,
             imgSrc: img5,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
+        },
+        {
+            id: 6,
+            imgSrc: img6,
         },
         {
             id: 6,
