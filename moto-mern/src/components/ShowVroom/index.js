@@ -26,6 +26,10 @@ import img23 from '../../assets/Cars/triumph-tr6.jpg';
 import img24 from '../../assets/Cars/vw-beetle-or.jpg';
 import img25 from '../../assets/Cars/vw-beetle-red.jpg';
 import img26 from '../../assets/Cars/toyota-fj40.jpg';
+import plus from '../../assets/Cars/plus-icon.png';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 
 function ShowVroom() {
@@ -135,7 +139,21 @@ function ShowVroom() {
             id: 26,
             imgSrc: img26,
         },
-    ]
+    ];
+
+    const toastifySuccess = () => {
+        toast('Car Added To Garage!', {
+          position: 'fixed',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,  
+          draggable: false,
+          className: 'submit-feedback success',
+          toastId: 'notifyToast'
+        });
+        console.log("Added to Garage!")
+      };
 
 
 // useEffect   (()=>{
@@ -178,7 +196,12 @@ function ShowVroom() {
                     {data.map((item, index) => {
                         return(
                             <div className="pics" key={index}>
+                                <a className="addTo" onClick={toastifySuccess}>
                                 <img src={item.imgSrc} style={{ width: '100%' }} />
+                                <img src={plus} className="plus" style={{ width: '10%' }}/>
+                                Add To Your Garage
+                                </a>
+                                <ToastContainer />
                             </div>
                         )
                     })}
