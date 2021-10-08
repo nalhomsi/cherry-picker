@@ -1,6 +1,6 @@
 main {
 	margin: 0 0;
-	max-width: 90%;
+	max-width: 100%;
   padding: 10px 45px;
 }
 :root {
@@ -358,4 +358,9 @@ a {
   -moz-column-width: 33%;
   column-width: 33%;
   padding: 0 12px;
+  cursor: pointer;
+}
+
+.pics {
+  margin-top: 4px;
 }

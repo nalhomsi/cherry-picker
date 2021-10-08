@@ -6,20 +6,20 @@ import img3 from '../../assets/Cars/bmw-e30.jpg';
 import img4 from '../../assets/Cars/cadillac-deville.jpg';
 import img5 from '../../assets/Cars/chevrolet-c10.jpg';
 import img6 from '../../assets/Cars/ferrari-250gto.jpg';
-import img7 from '../../assets/Cars/';
-import img8 from '../../assets/Cars/';
-import img9 from '../../assets/Cars/';
-import img10 from '../../assets/Cars/';
-import img11 from '../../assets/Cars/';
-import img12 from '../../assets/Cars/';
-import img13 from '../../assets/Cars/';
-import img14 from '../../assets/Cars/';
-import img15 from '../../assets/Cars/';
-import img16 from '../../assets/Cars/';
-import img17 from '../../assets/Cars/';
-import img18 from '../../assets/Cars/';
-import img19 from '../../assets/Cars/';
-import img20 from '../../assets/Cars/'
+import img7 from '../../assets/Cars/ford-bronco1.jpg';
+import img8 from '../../assets/Cars/ford-f100-red.jpg';
+import img9 from '../../assets/Cars/ford-f100.jpg';
+import img10 from '../../assets/Cars/ford-mustang.jpg';
+import img11 from '../../assets/Cars/jaguar-etype.jpg';
+import img12 from '../../assets/Cars/lancia-fulvia.jpg';
+import img13 from '../../assets/Cars/land-rover-def.jpg';
+import img14 from '../../assets/Cars/mercedes-230sl.jpg';
+import img15 from '../../assets/Cars/mercedes-300cd.jpg';
+import img16 from '../../assets/Cars/mercedes-300sl.jpg';
+import img17 from '../../assets/Cars/mercedes-500sl.jpg';
+import img18 from '../../assets/Cars/mini-cooper.jpg';
+import img19 from '../../assets/Cars/pontiac-gto.jpg';
+import img20 from '../../assets/Cars/porsche-911-back.jpg';
 
 function ShowVroom() {
     // Gallery Data
@@ -49,60 +49,60 @@ function ShowVroom() {
             imgSrc: img6,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 7,
+            imgSrc: img7,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 8,
+            imgSrc: img8,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 9,
+            imgSrc: img9,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 10,
+            imgSrc: img10,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 11,
+            imgSrc: img11,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 12,
+            imgSrc: img12,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 13,
+            imgSrc: img13,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 14,
+            imgSrc: img14,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 15,
+            imgSrc: img15,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 16,
+            imgSrc: img16,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 17,
+            imgSrc: img17,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 18,
+            imgSrc: img18,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 19,
+            imgSrc: img19,
         },
         {
-            id: 6,
-            imgSrc: img6,
+            id: 20,
+            imgSrc: img20,
         },
     ]
 
