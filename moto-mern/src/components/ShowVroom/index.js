@@ -20,6 +20,13 @@ import img17 from '../../assets/Cars/mercedes-500sl.jpg';
 import img18 from '../../assets/Cars/mini-cooper.jpg';
 import img19 from '../../assets/Cars/pontiac-gto.jpg';
 import img20 from '../../assets/Cars/porsche-911-back.jpg';
+import img21 from '../../assets/Cars/porsche-911.jpg';
+import img22 from '../../assets/Cars/shelby-cobra.jpg';
+import img23 from '../../assets/Cars/triumph-tr6.jpg';
+import img24 from '../../assets/Cars/vw-beetle-or.jpg';
+import img25 from '../../assets/Cars/vw-beetle-red.jpg';
+import img26 from '../../assets/Cars/toyota-fj40.jpg';
+
 
 function ShowVroom() {
     // Gallery Data
@@ -103,6 +110,30 @@ function ShowVroom() {
         {
             id: 20,
             imgSrc: img20,
+        },
+        {
+            id: 21,
+            imgSrc: img21,
+        },
+        {
+            id: 22,
+            imgSrc: img22,
+        },
+        {
+            id: 23,
+            imgSrc: img23,
+        },
+        {
+            id: 24,
+            imgSrc: img24,
+        },
+        {
+            id: 25,
+            imgSrc: img25,
+        },
+        {
+            id: 26,
+            imgSrc: img26,
         },
     ]
 

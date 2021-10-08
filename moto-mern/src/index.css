@@ -358,9 +358,10 @@ a {
   -moz-column-width: 33%;
   column-width: 33%;
   padding: 0 12px;
-  cursor: pointer;
 }
 
-.pics {
-  margin-top: 4px;
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  margin-bottom: 4px;
 }
