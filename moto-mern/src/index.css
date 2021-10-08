@@ -327,7 +327,7 @@ button {
 	background: var(--primary);
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
+	color: black;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 600;
