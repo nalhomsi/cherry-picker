@@ -1,9 +1,8 @@
 import React, {useEffect} from "react";
-// import axios from "axios";
-// import cheerio from "cheerio"
+
 function ShowVroom() {
-useEffect   (()=>{
-    console.log ("Hey")
+// useEffect   (()=>{
+//     console.log ("Hey")
     
 //  axios.get("https://old.reddit.com/r/webdev/").then(function(response){
 //      var $=cheerio.load(response.data)
@@ -30,7 +29,7 @@ useEffect   (()=>{
 //      // Log the results once you've looped through each of the elements found with cheerio
 //      console.log(results);
 //  })
-},[])
+// },[])
 
     return(
         <section>
