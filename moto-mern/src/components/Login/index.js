@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 
-// export default class Login extends Component {
 const Login=()=>{
-    
-    // render() {
         return (
-            <form>
-                <h3>Sign In</h3>
+           <center> 
+               <form>
+                <h4>Sign In</h4>
 
                 <div className="form-group">
                     <label>Email address</label>
@@ -26,12 +24,12 @@ const Login=()=>{
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
+                <h5 className="forgot-password text-right">
+                     <a href="#">Forgot password?</a>
+                </h5>
             </form>
+            </center>
         );
-    // }
 }
 
 export default Login;
