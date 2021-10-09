@@ -4,17 +4,17 @@ const express = require('express');
 const db = require('./config/connection');
 const axios = require ("axios");
 const cheerio = require ("cheerio");
-
+​
 const PORT = process.env.PORT || 3001;
 const app = express();
-
+​
 // const server = new ApolloServer({
 //   typeDefs,
 //   resolvers,
 // });
-
+​
 // server.applyMiddleware({ app });
-
+​
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.get("/getcars",(req, res) => {
