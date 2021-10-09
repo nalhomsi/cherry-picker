@@ -13,7 +13,6 @@
     "apollo-server-express": "^3.3.0",
     "axios": "^0.22.0",
     "bcrypt": "^5.0.1",
-    "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.1",
     "graphql": "^15.6.1",
     "mongoose": "^6.0.9",
