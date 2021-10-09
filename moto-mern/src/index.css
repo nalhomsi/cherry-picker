@@ -87,9 +87,10 @@ a {
 
 .navbar ul {
   display: flex;
-  justify-content: left center;
+  justify-content: center;
   text-decoration: none;
   list-style-type: none;
+  width: 100%;
 }
 
 .navlinks li a {
@@ -246,7 +247,7 @@ textarea {
 }
 
 .mx-2 {
-  margin-right: var(--spacing-two);
+  /* margin-right: var(--spacing-two); */
   margin-left: var(--spacing-two);
 }
 

@@ -7,6 +7,7 @@ import ShowVroom from './components/ShowVroom';
 import VinVerify from './components/VinVerify';
 import Contact from './components/Contact';
 import Login from './components/Login';
+import MyGarage from './components/MyGarage';
 // Assets
 import coverImage from "./assets/cover/cover-image.jpg";
 // var cheerio = require("cheerio");
@@ -20,14 +21,15 @@ function App() {
         <div>
           <Nav />
           <main>
-          <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+          <img id="coverpic" src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
               <Switch>
-                <Route exact={true} path='/' component={About} />
+                <Route exact={true} path='/' component={ShowVroom} />
                 <Route exact path="/about" component={About} />
                 <Route exact path='/showvroom' component={ShowVroom} />
                 <Route exact path='/vinverify' component={VinVerify} />
                 <Route exact path='/contact' component={Contact} />
                 <Route exact path='/login' component={Login} />
+                <Route exact path='/mygarage' component={MyGarage} />
               </Switch>        
           </main>
         </div>
