@@ -349,6 +349,30 @@ a {
   color: var(--secondary);
 }
 
+/* Login Signup component styling */
+#loginbody {
+  display: flex;
+  justify-content: center;
+}
+
+#loginbody form {
+  margin: 15px;
+}
+
+#loginbody form h2 {
+  font-weight: bold;
+}
+
+#loginbody button {
+  margin-top: 10px;
+}
+
+.form-group input {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 20px;
+}
+
 /* Gallery Styling */
 .gallery {
   -webkit-column-count: 3;
