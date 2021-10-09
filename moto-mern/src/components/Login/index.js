@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 const Login=()=>{
         return (
-           <center> 
-               <form>
+               <center><form>
                 <h4>Sign In</h4>
 
                 <div className="form-group">
@@ -25,10 +24,10 @@ const Login=()=>{
 
                 <button type="submit" className="btn btn-primary btn-block">Submit</button>
                 <h5 className="forgot-password text-right">
-                     <a href="#">Forgot password?</a>
+                     <small><a href="#">Forgot password?</a></small>
                 </h5>
-            </form>
-            </center>
+            </form></center>
+           
         );
 }
 
