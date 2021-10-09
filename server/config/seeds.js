@@ -188,5 +188,9 @@ db.once('open', async () => {
             model: 'FJ40',
             image: img26
         }
-    ])
+    ]);
+
+    console.log('Classic Cars Seeded!');
+
+    process.exit();
 })
