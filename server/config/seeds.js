@@ -84,91 +84,109 @@ db.once('open', async () => {
             year: '0000',
             make: 'Ford',
             model: 'F100',
-            image: img 
+            image: img9
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Ford',
+            model: 'Mustang',
+            image: img10
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Jaguar',
+            model: 'E-Type',
+            image: img11
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Lancia',
+            model: 'Fulvia',
+            image: img12
+        },
+        {
+            year: '1970',
+            make: 'Land Rover',
+            model: 'Defender',
+            image: img13
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Mercedes-Benz',
+            model: '230SL',
+            image: img14
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Mercedes-Benz',
+            model: '300CD',
+            image: img15
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Mercedes-Benz',
+            model: '300SL',
+            image: img16
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Mercedes-Benz',
+            model: '500SL',
+            image: img17
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Mini',
+            model: 'Cooper',
+            image: img18
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Pontiac',
+            model: 'GTO',
+            image: img19 
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Porsche',
+            model: '911',
+            image: img20
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Porsche',
+            model: '911',
+            image: img21
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Shelby',
+            model: 'Cobra',
+            image: img22
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Triumph',
+            model: 'TR6',
+            image: img23
         },
         {
             year: '0000',
-            make: '',
-            model: '',
-            image: img 
+            make: 'Volkswagen',
+            model: 'Beetle',
+            image: img24
         },
+        {
+            year: '0000',
+            make: 'Volkswagen',
+            model: 'Beetle',
+            image: img25
+        },
+        {
+            year: '0000',
+            make: 'Toyota',
+            model: 'FJ40',
+            image: img26
+        }
     ])
 })
