@@ -59,7 +59,7 @@ function Contact() {
     return(
      <section>
             <header className="comp-header">
-                   <center> <h4>Contact Us</h4></center>
+                   <center> <h1>Contact Us</h1></center>
                 </header>
             <div>
                 <ContactBox>
