@@ -11,7 +11,7 @@ import img8 from '../../assets/Cars/ford-f100-red.jpg';
 import img9 from '../../assets/Cars/ford-f100.jpg';
 import img10 from '../../assets/Cars/ford-mustang.jpg';
 import img11 from '../../assets/Cars/jaguar-etype.jpg';
-import img12 from '../../assets/Cars/lancia-fulvia.jpg';
+import img12 from '../../assets/Cars/Lancia-Fulvia.jpg';
 import img13 from '../../assets/Cars/land-rover-def.jpg';
 import img14 from '../../assets/Cars/mercedes-230sl.jpg';
 import img15 from '../../assets/Cars/mercedes-300cd.jpg';
