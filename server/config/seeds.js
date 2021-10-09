@@ -36,13 +36,139 @@ db.once('open', async () => {
             year: '1962',
             make: 'AC',
             model: 'Cobra',
-            image: ''
+            image: img1
         },
         {
-            year: '',
+            year: '1964',
+            make: 'Austin-Healey',
+            model: '3000',
+            image: img2
+        },
+        {
+            year: '0000',
+            make: 'BMW',
+            model: 'e30',
+            image: img3
+        },
+        {
+            year: '0000',
+            make: 'Cadillac',
+            model: 'DeVille',
+            image: img4
+        },
+        {
+            year: '0000',
+            make: 'Chevrolet',
+            model: 'C-10',
+            image: img5
+        },
+        {
+            year: '0000',
+            make: 'Ferrari',
+            model: '250-GTO',
+            image: img6
+        },
+        {
+            year: '0000',
+            make: 'Ford',
+            model: 'Bronco',
+            image: img7
+        },
+        {
+            year: '0000',
+            make: 'Ford',
+            model: 'F100',
+            image: img8
+        },
+        {
+            year: '0000',
+            make: 'Ford',
+            model: 'F100',
+            image: img 
+        },
+        {
+            year: '0000',
             make: '',
             model: '',
-            image: ''
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
+        },
+        {
+            year: '0000',
+            make: '',
+            model: '',
+            image: img 
         },
     ])
 })
