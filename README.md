@@ -2,7 +2,8 @@ Cherry Picker is a service that allows you to find your dream classic motor and 
 
 In this project we used HTML5, Javascript, CSS, Yarn, React, Axios, Bcrypt, Express, Graphql, Mongoose, and nodemon.
 
+![webpage](https://user-images.githubusercontent.com/80538653/136689188-08ecc6ee-d0a0-4ba7-99be-10c4a02dce78.jpg)
 
-![webpage](https://user-images.githubusercontent.com/83055639/136642294-954f3bc5-7c10-4b00-9358-17bf9ec339fe.jpg)
+
 
 Deployed website:
