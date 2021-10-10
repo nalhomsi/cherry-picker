@@ -45,61 +45,61 @@ db.once('open', async () => {
             image: img2
         },
         {
-            year: '0000',
+            year: '1982',
             make: 'BMW',
             model: 'e30',
             image: img3
         },
         {
-            year: '0000',
+            year: '1973',
             make: 'Cadillac',
             model: 'DeVille',
             image: img4
         },
         {
-            year: '0000',
+            year: '1962',
             make: 'Chevrolet',
             model: 'C-10',
             image: img5
         },
         {
-            year: '0000',
+            year: '1962',
             make: 'Ferrari',
             model: '250-GTO',
             image: img6
         },
         {
-            year: '0000',
+            year: '1970',
             make: 'Ford',
             model: 'Bronco',
             image: img7
         },
         {
-            year: '0000',
+            year: '1955',
             make: 'Ford',
             model: 'F100',
             image: img8
         },
         {
-            year: '0000',
+            year: '1959',
             make: 'Ford',
             model: 'F100',
             image: img9
         },
         {
-            year: '0000',
+            year: '1957',
             make: 'Ford',
             model: 'Mustang',
             image: img10
         },
         {
-            year: '0000',
+            year: '1961',
             make: 'Jaguar',
             model: 'E-Type',
             image: img11
         },
         {
-            year: '0000',
+            year: '1970',
             make: 'Lancia',
             model: 'Fulvia',
             image: img12
@@ -111,79 +111,79 @@ db.once('open', async () => {
             image: img13
         },
         {
-            year: '0000',
+            year: '1966',
             make: 'Mercedes-Benz',
             model: '230SL',
             image: img14
         },
         {
-            year: '0000',
+            year: '1985',
             make: 'Mercedes-Benz',
             model: '300CD',
             image: img15
         },
         {
-            year: '0000',
+            year: '1957',
             make: 'Mercedes-Benz',
             model: '300SL',
             image: img16
         },
         {
-            year: '0000',
+            year: '1982',
             make: 'Mercedes-Benz',
             model: '500SL',
             image: img17
         },
         {
-            year: '0000',
+            year: '1996',
             make: 'Mini',
             model: 'Cooper',
             image: img18
         },
         {
-            year: '0000',
+            year: '1972',
             make: 'Pontiac',
             model: 'GTO',
             image: img19 
         },
         {
-            year: '0000',
+            year: '1963',
             make: 'Porsche',
             model: '911',
             image: img20
         },
         {
-            year: '0000',
+            year: '1964',
             make: 'Porsche',
             model: '911',
             image: img21
         },
         {
-            year: '0000',
+            year: '1965',
             make: 'Shelby',
             model: 'Cobra',
             image: img22
         },
         {
-            year: '0000',
+            year: '1976',
             make: 'Triumph',
             model: 'TR6',
             image: img23
         },
         {
-            year: '0000',
+            year: '1990',
             make: 'Volkswagen',
             model: 'Beetle',
             image: img24
         },
         {
-            year: '0000',
+            year: '1992',
             make: 'Volkswagen',
             model: 'Beetle',
             image: img25
         },
         {
-            year: '0000',
+            year: '1983',
             make: 'Toyota',
             model: 'FJ40',
             image: img26
