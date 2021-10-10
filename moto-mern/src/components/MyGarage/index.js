@@ -16,30 +16,25 @@ function MyGarage() {
     )
 }
 
-var filesForDownload = [];
-filesForDownload( { path: "'../../assets/Cars/ford-mustang.jpg'", name: "ford-mustang.jpg" } );
-filesForDownload( { path: "/path/file2.jpg", name: "file2.jpg" } );
-filesForDownload( { path: "/path/file3.png", name: "file3.png" } );
-filesForDownload( { path: "/path/file4.txt", name: "file4.txt" } );
-
-$jq('input.downloadAll').click( function( e )
-{
-    e.preventDefault();
-
-    var temporaryDownloadLink = document.createElement("a");
-    temporaryDownloadLink.style.display = 'none';
-
-    document.body.appendChild( temporaryDownloadLink );
-
-    for( var n = 0; n < filesForDownload.length; n++ )
-    {
-        var download = filesForDownload[n];
-        temporaryDownloadLink.setAttribute( 'href', download.path );
-        temporaryDownloadLink.setAttribute( 'download', download.name );
-
-        temporaryDownloadLink.click();
+var urls = [
+    '../../assets/Cars/ford-mustang.jpg',
+    'http://example.com/file2',
+    'http://example.com/file3'
+  ]
+  
+  var interval = setInterval(download, 300, urls);
+  
+  function download(urls) {
+    var url = urls.pop();
+  
+    var a = document.createElement("a");
+    a.setAttribute('href', url);
+    a.setAttribute('download', '');
+    a.setAttribute('target', '_blank');
+    a.click();
+  
+    if (urls.length == 0) {
+      clearInterval(interval);
     }
-
-    document.body.removeChild( temporaryDownloadLink );
-} );
+  }
 export default MyGarage;
