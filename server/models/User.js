@@ -24,7 +24,7 @@ const userSchema = new Schema({
         required: true,
         minlength: 5
     },
-    myGarage: [myGarage.schema]
+    // myGarage: [myGarage.schema]
 });
 
 // pre-save middleware to create password
