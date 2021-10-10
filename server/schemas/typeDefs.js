@@ -1,7 +1,7 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-type Car {
+  type Car {
     _id: ID
     make: String
     model: String
@@ -9,7 +9,7 @@ type Car {
   }
 
   type Query {
-    : [Car]
+    cars: [Car]
     car(make: String!): Car
   }
 `;

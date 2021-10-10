@@ -1,6 +1,6 @@
 main {
 	margin: 0 0;
-	max-width: 90%;
+	max-width: 100%;
   padding: 10px 45px;
 }
 :root {
@@ -87,9 +87,10 @@ a {
 
 .navbar ul {
   display: flex;
-  justify-content: left center;
+  justify-content: center;
   text-decoration: none;
   list-style-type: none;
+  width: 100%;
 }
 
 .navlinks li a {
@@ -111,6 +112,10 @@ header a {
 .comp-header h1 {
   display: flex;
   justify-content: center;
+}
+
+.comp-header {
+margin-bottom: 20px;
 }
 
 a {
@@ -246,7 +251,7 @@ textarea {
 }
 
 .mx-2 {
-  margin-right: var(--spacing-two);
+  /* margin-right: var(--spacing-two); */
   margin-left: var(--spacing-two);
 }
 
@@ -348,3 +353,63 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+/* Login Signup component styling */
+#loginbody {
+  display: flex;
+  justify-content: center;
+}
+
+#loginbody form {
+  margin: 15px;
+}
+
+#loginbody form h2 {
+  font-weight: bold;
+}
+
+#loginbody button {
+  margin-top: 10px;
+}
+
+.form-group input {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 20px;
+}
+
+/* Gallery Styling */
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.plus {
+  z-index: 999;
+}
+
+.addTo {
+  color: #000000;
+}
+
+.addto a {
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* .plus::before {
+  content: '';
+} */

@@ -18,7 +18,7 @@ function Nav() {
                     </li>
                     <li className="mx-2">
                         <Link to="/vinverify">
-                            VIN Verify
+                            VINCheck
                         </Link>
                     </li>
                     <li className="mx-2">
@@ -29,6 +29,11 @@ function Nav() {
                     <li className="mx-2">
                         <Link to="/login">
                             Login/Signup
+                        </Link>
+                    </li>
+                    <li className="mx-2">
+                        <Link to="/mygarage">
+                            MyGarage
                         </Link>
                     </li>
                 </ul>

@@ -29,31 +29,37 @@ const handleInputChange=(event)=>{
     setInfoData({ ...infoData, [name]: value });
 }
     return(
-        <center><section>
-            <div>
-                <form onSubmit ={handlesubmit}>
-                  <h4>Enter Model Year   | Enter VIN Number</h4>
-                    <input
-                    type="text"
-                        placeholder ="please enter model year"
-                        name = "modelYear"
+        <center>
+            <section>
+            <header className="comp-header">
+                <h1>VINCheck</h1>
+                <p>Protect your investment from the start.</p>
+            </header>
+                <div>
+                    <form onSubmit ={handlesubmit}>
+                    <h4>Enter Model Year   | Enter VIN Number</h4>
+                        <input
+                        type="text"
+                            placeholder ="please enter model year"
+                            name = "modelYear"
+                            onChange={handleInputChange}
+                            value={infoData.modelYearr}
+                        />
+                        <input
+                        type="text"
+                        placeholder ="enter VIN number"
+                        name = "vinNumber"
                         onChange={handleInputChange}
-                        value={infoData.modelYearr}
-                    />
-                    <input
-                    type="text"
-                    placeholder ="enter VIN number"
-                    name = "vinNumber"
-                    onChange={handleInputChange}
-                    value={infoData.vinNumber}
-                    />  
-            
-                    <br />
-                    <br />
-                    <button>Check Your Vin</button>
-                </form>
-            </div>
-        </section></center>
+                        value={infoData.vinNumber}
+                        />  
+                
+                        <br />
+                        <br />
+                        <button>Check Your Vin</button>
+                    </form>
+                </div>
+            </section>
+        </center>
     )
 };
 
