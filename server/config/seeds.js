@@ -171,19 +171,19 @@ db.once('open', async () => {
             image: img23
         },
         {
-            year: '0000',
+            year: '1990',
             make: 'Volkswagen',
             model: 'Beetle',
             image: img24
         },
         {
-            year: '0000',
+            year: '1992',
             make: 'Volkswagen',
             model: 'Beetle',
             image: img25
         },
         {
-            year: '0000',
+            year: '1983',
             make: 'Toyota',
             model: 'FJ40',
             image: img26
