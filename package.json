@@ -21,6 +21,7 @@
   "homepage": "https://github.com/nalhomsi/cherry-picker#readme",
   "dependencies": {
     "apollo-server-express": "^2.11.0",
+    "auth-client": "^0.4.11",
     "auth-js": "^0.0.16",
     "auth0-js": "^9.16.4",
     "axios": "^0.22.0",
