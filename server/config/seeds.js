@@ -135,37 +135,37 @@ db.once('open', async () => {
             image: img17
         },
         {
-            year: '0000',
+            year: '1996',
             make: 'Mini',
             model: 'Cooper',
             image: img18
         },
         {
-            year: '0000',
+            year: '1972',
             make: 'Pontiac',
             model: 'GTO',
             image: img19 
         },
         {
-            year: '0000',
+            year: '1963',
             make: 'Porsche',
             model: '911',
             image: img20
         },
         {
-            year: '0000',
+            year: '1964',
             make: 'Porsche',
             model: '911',
             image: img21
         },
         {
-            year: '0000',
+            year: '1965',
             make: 'Shelby',
             model: 'Cobra',
             image: img22
         },
         {
-            year: '0000',
+            year: '1976',
             make: 'Triumph',
             model: 'TR6',
             image: img23
