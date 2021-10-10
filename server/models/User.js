@@ -1,6 +1,4 @@
-const mongoose = require('mongoose');
-
-const { Schema } = mongoose;
+const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const userSchema = new Schema({
@@ -18,6 +16,7 @@ const userSchema = new Schema({
 		type: String,
 		required: true,
 		unique: true,
+		match: [/.+@.+\..+/, 'Must match an email address!'],
 	},
 	password: {
 		type: String,
@@ -27,7 +26,7 @@ const userSchema = new Schema({
 	// myGarage: [myGarage.schema]
 });
 
-// pre-save middleware to create password
+// set up pre-save middleware to create password
 userSchema.pre('save', async function (next) {
 	if (this.isNew || this.isModified('password')) {
 		const saltRounds = 10;
@@ -39,9 +38,9 @@ userSchema.pre('save', async function (next) {
 
 // compare the incoming password with the hashed password
 userSchema.methods.isCorrectPassword = async function (password) {
-	return await bcrypt.compare(password, this.password);
+	return bcrypt.compare(password, this.password);
 };
 
-const User = mongoose.model('User', userSchema);
+const User = model('User', userSchema);
 
 module.exports = User;
