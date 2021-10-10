@@ -99,7 +99,7 @@ db.once('open', async () => {
             image: img11
         },
         {
-            year: '0000',
+            year: '1970',
             make: 'Lancia',
             model: 'Fulvia',
             image: img12
