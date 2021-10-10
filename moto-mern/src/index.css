@@ -114,6 +114,10 @@ header a {
   justify-content: center;
 }
 
+.comp-header {
+margin-bottom: 20px;
+}
+
 a {
   position: relative;
   margin-top: 0;
