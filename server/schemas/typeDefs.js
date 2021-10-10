@@ -19,6 +19,9 @@ const typeDefs = gql`
 	}
 
 	type Query {
+		me: User
+		users: [User]
+		user(username: String!): User
 		cars: [Car]
 		car(make: String!): Car
 	}

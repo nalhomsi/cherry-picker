@@ -6,13 +6,17 @@ const resolvers = {
 		me: async (parent, args, context) => {
 			console.log(context.user);
 			if (context.user) {
-				const userData = await User.findOne({ _id: context.user._id });
+				const userData = await User.findOne({ _id: context.user._id }).select(
+					'-__v -password'
+				);
 				return userData;
 			}
+
+			throw new AuthenticationError('Not logged in');
 		},
-	},
-	cars: async (parent, { make }) => {
-		return Car.findOne({ make });
+		cars: async (parent, { make }) => {
+			return Car.findOne({ make });
+		},
 	},
 	Mutation: {
 		addUser: async (parent, args) => {
