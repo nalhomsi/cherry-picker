@@ -12,6 +12,11 @@
   "dependencies": {
     "apollo-server-express": "^3.3.0",
     "bcrypt": "^5.0.1",
+<<<<<<< features1
+=======
+    "cheerio": "^1.0.0-rc.10",
+    "cherio": "^1.0.0-rc.2",
+>>>>>>> local
     "express": "^4.17.1",
     "graphql": "^15.6.1",
     "mongoose": "^6.0.9",
