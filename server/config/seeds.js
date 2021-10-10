@@ -45,7 +45,7 @@ db.once('open', async () => {
             image: img2
         },
         {
-            year: '0000',
+            year: '1982',
             make: 'BMW',
             model: 'e30',
             image: img3
