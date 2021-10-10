@@ -51,7 +51,7 @@ db.once('open', async () => {
             image: img3
         },
         {
-            year: '0000',
+            year: '1973',
             make: 'Cadillac',
             model: 'DeVille',
             image: img4
