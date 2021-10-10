@@ -17,7 +17,7 @@ function MyGarage() {
 }
 
 var urls = [
-    '../../assets/Cars/ford-mustang.jpg',
+    'http://example.com/file1',
     'http://example.com/file2',
     'http://example.com/file3'
   ]
