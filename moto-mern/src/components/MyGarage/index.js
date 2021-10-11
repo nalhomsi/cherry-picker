@@ -1,45 +1,72 @@
 import React from "react";
 
-function MyGarage() {
+const items = [
+  {
+    id: 1,
+    name: "AC Cobra",
+    price: 36000
+  },
+  {
+    id: 2,
+    name: "Austin Healey",
+    price: 32000
+  },
+  {
+    id: 3,
+    name: "BMW-e30",
+    price: 51000
+  },
+];
 
-    return (
-        <section>
-            <div>
-            <header className="comp-header">
-                <h1>MyGarage</h1>
-            </header>
-            <div className="gallery">
+const Shop = () => {
+  const [cart, setCart] = React.useState([]);
+  const cartTotal = cart.reduce((total, { price = 0 }) => total + price, 0);
 
-            </div>
-            </div>
-        </section>
-    )
-}
+  const addToCart = (item) => setCart((currentCart) => [...currentCart, item]);
 
-var filesForDownload = [];
-filesForDownload( { path: "'../../assets/Cars/ford-mustang.jpg'", name: "ford-mustang.jpg" } );
-filesForDownload( { path: "/path/file2.jpg", name: "file2.jpg" } );
-filesForDownload( { path: "/path/file3.png", name: "file3.png" } );
-filesForDownload( { path: "/path/file4.txt", name: "file4.txt" } );
+  const removeFromCart = (item) => {
+    setCart((currentCart) => {
+      const indexOfItemToRemove = currentCart.findIndex((cartItem) => cartItem.id === item.id);
 
-$jq('input.downloadAll').click( function( e )
-{
-    e.preventDefault();
+      if (indexOfItemToRemove === -1) {
+        return currentCart;
+      }
 
-    var temporaryDownloadLink = document.createElement("a");
-    temporaryDownloadLink.style.display = 'none';
+      return [
+        ...currentCart.slice(0, indexOfItemToRemove),
+        ...currentCart.slice(indexOfItemToRemove + 1),
+      ];
+    });
+  };
 
-    document.body.appendChild( temporaryDownloadLink );
+  const amountOfItems = (id) => cart.filter((item) => item.id === id).length;
 
-    for( var n = 0; n < filesForDownload.length; n++ )
-    {
-        var download = filesForDownload[n];
-        temporaryDownloadLink.setAttribute( 'href', download.path );
-        temporaryDownloadLink.setAttribute( 'download', download.name );
+  const listItemsToBuy = () => items.map((item) => (
+    <div key={item.id}>
+      {`${item.name}: $${item.price}`}
+      <button type="submit" onClick={() => addToCart(item)}>Add</button>
+    </div>
+  ));
 
-        temporaryDownloadLink.click();
-    }
+  const listItemsInCart = () => items.map((item) => (
+    <div key={item.id}>
+      ({amountOfItems(item.id)} x ${item.price}) {`${item.name}`}
+      <button type="submit" onClick={() => removeFromCart(item)}>Remove</button>
+    </div>
+  ));
 
-    document.body.removeChild( temporaryDownloadLink );
-} );
-export default MyGarage;
+  return (
+   <center> <div>
+      <h3>STORE</h3>
+      <div>{listItemsToBuy()}</div>
+      <h3>CART</h3>
+      <div>{listItemsInCart()}</div>
+      <div>Total: ${cartTotal}</div>
+      <div>
+        <button onClick={() => setCart([])}>Clear</button>
+      </div>
+    </div></center>
+  );
+};
+
+export default Shop;

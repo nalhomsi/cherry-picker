@@ -1,3 +1,4 @@
+
 const garageSchema = new Schema({
 	car: {
 		type: Schema.Types.ObjectId,
