@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 // Gallery Files
 
-import img1 from '../../assets/Cars/ac-cobra.jpg';
+import img1 from '../../assets/Cars/cobra.jpg';
 import img2 from '../../assets/Cars/austin-healey.jpg';
 import img3 from '../../assets/Cars/bmw-e30.jpg';
 import img4 from '../../assets/Cars/cadillac-deville.jpg';
