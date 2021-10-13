@@ -1,4 +1,5 @@
 import React from 'react'
+import road from '../../assets/Cars/road.jpg'
 // import coverImage from "../../assets/cover/cover-image.jpg";
 
 function About() {
@@ -15,7 +16,9 @@ function About() {
             and find out the status of the 
             title, the specs of the car, and other pertinent 
             information about the vehicle you have selected. 
-          </h5>
+            </h5>
+            <div> <img src={road} style={{ width:"100%" }}/>
+           </div>
         </header>
       </div>
     </section></center>
