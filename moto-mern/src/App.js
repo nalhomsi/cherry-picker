@@ -1,5 +1,14 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
+
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+
 // Components
 import Nav from './components/Nav';
 import About from './components/About';
@@ -14,10 +23,30 @@ import coverImage from "./assets/cover/cover-image.jpg";
 // var cheerio = require("cheerio");
 // var axios = require("axios");
 
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
+
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
+
 function App() {
 
   return (
     <body>
+      <ApolloProvider client={client}>
       <HashRouter>
         <div>
           <Nav />
@@ -36,6 +65,7 @@ function App() {
           </main>
         </div>
       </HashRouter>
+      </ApolloProvider>
     </body>
   );
 }
