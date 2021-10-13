@@ -4,13 +4,11 @@ const typeDefs = gql`
 		_id: ID!
 		username: String!
 		email: String!
+		myGarage: [Car]
 	}
 
 	type Car {
-		_id: ID
-		make: String
-		model: String
-		year: String
+		image: String
 	}
 
 	type Auth {
@@ -22,13 +20,17 @@ const typeDefs = gql`
 		me: User
 		users: [User]
 		user(username: String!): User
-		cars: [Car]
-		car(make: String!): Car
 	}
+input carInput{
+	image: String
+
+
+}
 
 	type Mutation {
 		login(email: String!, password: String!): Auth
 		addUser(username: String!, email: String!, password: String!): Auth
+		addACar (carInfo: carInput): User
 	}
 `;
 

@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-
+const carSchema = require ("./Car")
 const userSchema = new Schema({
 	firstName: {
 		type: String,
@@ -23,7 +23,7 @@ const userSchema = new Schema({
 		required: true,
 		minlength: 5,
 	},
-	// myGarage: [myGarage.schema]
+	myGarage: [carSchema]
 });
 
 // set up pre-save middleware to create password

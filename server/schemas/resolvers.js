@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Car, User } = require('../models');
+const {User } = require('../models');
 const { signToken } = require('../utils/auths');
 const resolvers = {
 	Query: {
@@ -14,9 +14,9 @@ const resolvers = {
 
 			throw new AuthenticationError('Not logged in');
 		},
-		cars: async (parent, { make }) => {
-			return Car.findOne({ make });
-		},
+		// cars: async (parent, { make }) => {
+		// 	return Car.findOne({ make });
+		// },
 	},
 	Mutation: {
 		addUser: async (parent, args) => {
@@ -36,6 +36,13 @@ const resolvers = {
 			const token = signToken(user);
 			return { token, user };
 		},
+		addACar: async (parent,args,context) => {
+if (context.user){
+	const updateUser = await User.findByIdAndUpdate(
+		{_id:context.user._id},{$push:{myGarage:args.carInfo}},{new:true}
+	)
+}
+		}
 	},
 };
 module.exports = resolvers;
