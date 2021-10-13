@@ -16,8 +16,6 @@ import ShowVroom from './components/ShowVroom';
 import VinVerify from './components/VinVerify';
 import Contact from './components/Contact';
 import Login from './components/Login';
-import MyGarage from './components/MyGarage';
-import ProductList from './components/ProductList';
 // Assets
 import coverImage from "./assets/cover/cover-image.jpg";
 // var cheerio = require("cheerio");
@@ -59,8 +57,7 @@ function App() {
                 <Route exact path='/vinverify' component={VinVerify} />
                 <Route exact path='/contact' component={Contact} />
                 <Route exact path='/login' component={Login} />
-                <Route exact path='/mygarage' component={MyGarage} />
-                <Route exact path='/productlist' component={ProductList} />
+                
               </Switch>        
           </main>
         </div>

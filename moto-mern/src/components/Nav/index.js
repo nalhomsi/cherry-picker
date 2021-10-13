@@ -31,16 +31,7 @@ function Nav() {
                             Login/Signup
                         </Link>
                     </li>
-                    <li className="mx-2">
-                        <Link to="/mygarage">
-                            MyGarage
-                        </Link>
-                    </li>
-                    <li className="mx-2">
-                        <Link to="/productlist">
-                            Product List
-                        </Link>
-                    </li>
+                    
                 </ul>
             </nav>
   );
