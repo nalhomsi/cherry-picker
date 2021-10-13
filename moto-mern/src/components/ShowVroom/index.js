@@ -85,7 +85,7 @@ function ShowVroom() {
         },
         {
             id: 10,
-            imgSrc: img11,
+            imgSrc: img10,
             link:"https://www.hemmings.com/auction/1966-shelby-gt350h?utm_medium=Promoted%20Listing&utm_source=Classifieds&utm_campaign=1966-shelby-gt350h"
         },
         {
@@ -151,7 +151,7 @@ function ShowVroom() {
         },
         {
             id: 23,
-            imgSrc: img24,
+            imgSrc: img23,
             link: "https://www.gatewayclassiccars.com/DEN/1031/1970-Triumph-TR6"
         },
         {
