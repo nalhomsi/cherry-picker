@@ -338,6 +338,8 @@ button {
 	font-weight: 600;
 	margin-bottom: 30px;
 	padding: 10px 15px;	
+  transition-duration: 0.4s;
+
 }
 
 a {
