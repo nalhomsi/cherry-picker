@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 // Gallery Files
-import img1 from '../../assets/Cars/ac-cobra.jpg';
+
+import img1 from '../../assets/Cars/cobra.jpg';
 import img2 from '../../assets/Cars/austin-healey.jpg';
 import img3 from '../../assets/Cars/bmw-e30.jpg';
 import img4 from '../../assets/Cars/cadillac-deville.jpg';
@@ -27,6 +28,7 @@ import img24 from '../../assets/Cars/vw-beetle-or.jpg';
 import img25 from '../../assets/Cars/vw-beetle-red.jpg';
 import img26 from '../../assets/Cars/toyota-fj40.jpg';
 import plus from '../../assets/Cars/plus-icon.png';
+
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
