@@ -41,9 +41,9 @@ If you have questions about the project, feel free to reach out to us via Github
 <br/>
 **Noor Alhomsi**: [Nalhomsi](https://github.com/Nalhomsi)
 <br/>
-**Benjamin Morris**:
+**Benjamin Morris**: [fbenjaminmorris](https://github.com/fbenjaminmorris)
 <br/>
-**Geoffrey Wein**:
+**Geoffrey Wein**: 
 <br/>
 **Justin Dowdy**: [JustinDowdy](https://github.com/JustinDowdy)
 
