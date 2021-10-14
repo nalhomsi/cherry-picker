@@ -12,6 +12,10 @@
     "build": "cd client && npm run build",
     "watch": "nodemon"
   },
+    "engines": {
+      "node": ">=0.10.3 <15"
+    
+  },git
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nalhomsi/cherry-picker.git"
