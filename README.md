@@ -45,5 +45,5 @@ If you have questions about the project, feel free to reach out to us via Github
 <br/>
 **Geoffrey Wein**:
 <br/>
-**Justin Dowdy**:
+**Justin Dowdy**: [JustinDowdy](https://github.com/JustinDowdy)
 
