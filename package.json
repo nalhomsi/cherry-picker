@@ -29,5 +29,8 @@
 	"homepage": "https://github.com/nalhomsi/cherry-picker#readme",
 	"devDependencies": {
 		"concurrently": "^6.3.0"
+	},
+	"dependencies": {
+		"react-scripts": "2.1.8"
 	}
 }
