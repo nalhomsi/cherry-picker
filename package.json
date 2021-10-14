@@ -1,31 +1,33 @@
 {
-  "name": "cherry-picker",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build",
-    "watch": "nodemon"
-  },
-  "engines": {
-    "node": "14.17.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nalhomsi/cherry-picker.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nalhomsi/cherry-picker/issues"
-  },
-  "homepage": "https://github.com/nalhomsi/cherry-picker#readme",
-  "devDependencies": {
-    "concurrently": "^6.3.0"
-  }
+	"name": "cherry-picker",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server/server.js",
+		"develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+		"install": "cd server && npm i && cd ../client && npm i",
+		"seed": "cd server && npm run seed",
+		"build": "cd client && npm run build",
+		"watch": "nodemon",
+		"heroku-prebuild": "npm i -f",
+		"heroku-postbuild": "npm run build"
+	},
+	"engines": {
+		"node": "14.17.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nalhomsi/cherry-picker.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/nalhomsi/cherry-picker/issues"
+	},
+	"homepage": "https://github.com/nalhomsi/cherry-picker#readme",
+	"devDependencies": {
+		"concurrently": "^6.3.0"
+	}
 }
