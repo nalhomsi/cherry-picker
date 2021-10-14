@@ -14,7 +14,7 @@
   },
   
     "engines": {
-      "node": ">=0.10.3 <15"
+      "node": "14.17.1"
   },
   "repository": {
     "type": "git",
