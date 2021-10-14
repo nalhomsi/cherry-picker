@@ -12,9 +12,8 @@
     "build": "cd client && npm run build",
     "watch": "nodemon"
   },
-  
-    "engines": {
-      "node": "14.17.1"
+  "engines": {
+    "node": "14.17.1"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,6 @@
     "url": "https://github.com/nalhomsi/cherry-picker/issues"
   },
   "homepage": "https://github.com/nalhomsi/cherry-picker#readme",
-  "dependencies": {},
   "devDependencies": {
     "concurrently": "^6.3.0"
   }
