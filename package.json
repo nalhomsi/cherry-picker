@@ -11,8 +11,7 @@
 		"seed": "cd server && npm run seed",
 		"build": "cd client && npm run build",
 		"watch": "nodemon",
-		"heroku-prebuild": "npm i -f",
-		"heroku-postbuild": "npm run build"
+		"heroku-prebuild": "npm i -f"
 	},
 	"engines": {
 		"node": "14.17.1"
