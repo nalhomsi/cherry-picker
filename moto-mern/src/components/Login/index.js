@@ -48,8 +48,8 @@ const Login=()=>{
 
                     <div className="form-group">
                         <div className="custom-control custom-checkbox">
-                            <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                            <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                            <input type="checkbox" className="custom-control-input" id="customCheck2" />
+                            <label className="custom-control-label" htmlFor="customCheck2">Remember me</label>
                         </div>
                     </div>
 
