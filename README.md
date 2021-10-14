@@ -43,7 +43,7 @@ If you have questions about the project, feel free to reach out to us via Github
 <br/>
 **Benjamin Morris**: [fbenjaminmorris](https://github.com/fbenjaminmorris)
 <br/>
-**Geoffrey Wein**: 
+**Geoffrey Wein**: [weingeoffrey](https://github.com/weingeoffrey)
 <br/>
 **Justin Dowdy**: [JustinDowdy](https://github.com/JustinDowdy)
 
