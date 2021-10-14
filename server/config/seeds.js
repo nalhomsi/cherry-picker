@@ -1,8 +1,9 @@
 const db = require('./connection');
 const { User, Product, Category } = require('../models');
+// This doesn't actually do anything... We don't have a Product or Category model defined...
 db.once('open', async () => {
 	//await Category.deleteMany();
-	const categories = await Category.insertMany([
+	const categories = new Category.insertMany([
 		{ name: 'Austin Healey' },
 		{ name: 'BMW' },
 		{ name: 'Cadillac' },
@@ -23,7 +24,7 @@ db.once('open', async () => {
 	]);
 	console.log('categories seeded');
 	//await Product.deleteMany();
-	const products = await Product.insertMany([
+	const products = new Product.insertMany([
 		{
 			name: 'AC Cobra',
 			description:
@@ -270,7 +271,7 @@ db.once('open', async () => {
 	]);
 	console.log('products seeded');
 	//await User.deleteMany();
-	await User.create({
+	User.create({
 		firstName: 'Pamela',
 		lastName: 'Washington',
 		email: 'pamela@testmail.com',
@@ -281,7 +282,7 @@ db.once('open', async () => {
 			},
 		],
 	});
-	await User.create({
+	User.create({
 		firstName: 'Elijah',
 		lastName: 'Holt',
 		email: 'eholt@testmail.com',

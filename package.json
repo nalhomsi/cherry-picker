@@ -29,6 +29,6 @@
 		"concurrently": "^6.3.0"
 	},
 	"dependencies": {
-		"react-scripts": "2.1.8"
+		"react-scripts": "3.0.0"
 	}
 }
