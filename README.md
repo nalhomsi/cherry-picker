@@ -19,6 +19,10 @@ In this project we used **HTML5, Javascript, CSS, Yarn, React, Axios, Bcrypt, Ex
 <br/>
 
 ![Screenshot (100)](https://user-images.githubusercontent.com/83102464/137254754-c753ea35-2cc6-4bb3-8068-374ddd5dac75.png)
+![Screenshot (101)](https://user-images.githubusercontent.com/83102464/137414751-47ead513-778e-4e76-8b4f-edce974988f4.png)
+![Screenshot (102)](https://user-images.githubusercontent.com/83102464/137414755-8a890ff3-dfbd-4414-a40c-feb6a7d3abd7.png)
+![Screenshot (103)](https://user-images.githubusercontent.com/83102464/137414775-b296f081-cae5-4cd1-b452-cec20e551f4a.png)
+![Screenshot (104)](https://user-images.githubusercontent.com/83102464/137414780-ba02cf10-5591-4b5c-b071-f922b7c953fa.png)
 
 ## Deployed
 Deployed website: https://floating-depths-28820.herokuapp.com/#/
