@@ -21,7 +21,7 @@ In this project we used **HTML5, Javascript, CSS, Yarn, React, Axios, Bcrypt, Ex
 ![Screenshot (100)](https://user-images.githubusercontent.com/83102464/137254754-c753ea35-2cc6-4bb3-8068-374ddd5dac75.png)
 
 ## Deployed
-Deployed website:
+Deployed website: https://floating-depths-28820.herokuapp.com/#/
 <br/>
 
 ## License
